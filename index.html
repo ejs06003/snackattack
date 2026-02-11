@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Attack - Casual Food Fight PvP Game</title>
+    <meta name="description" content="Throw food, climb the leaderboard, and unlock exclusive characters in this playful PvP strategy game.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+        
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            color: #a8b2d1;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .coming-soon {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            color: #a8b2d1;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        section {
+            margin: 60px 0;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.2s, background 0.2s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #f093fb;
+        }
+        
+        .feature p {
+            color: #a8b2d1;
+        }
+        
+        .screenshot-placeholder {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 60px 20px;
+            text-align: center;
+            color: #a8b2d1;
+            margin: 40px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #a8b2d1;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 60px;
+        }
+        
+        footer a {
+            color: #f093fb;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🍔🎯</div>
+            <h1>Snack Attack</h1>
+            <p class="tagline">Throw food. Climb the leaderboard. Become a legend.</p>
+            <!-- Change this to cta-button and add App Store link when ready -->
+            <span class="coming-soon">Coming Soon to iOS</span>
+        </header>
+
+        <section>
+            <h2>How It Works</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Pick Your Target</h3>
+                    <p>Choose from top players, revenge attackers, or random opponents.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🍕</div>
+                    <h3>Choose Your Weapon</h3>
+                    <p>Select from 20+ food items, each with unique accuracy and damage.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💥</div>
+                    <h3>Launch Attack</h3>
+                    <p>Throw food to deal damage and earn points. Risk vs. reward!</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">👑</div>
+                    <h3>Climb the Ranks</h3>
+                    <p>Compete on the global leaderboard and unlock exclusive rewards.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Strategic Depth</h3>
+                    <p>Balance accuracy, damage, and cost. Use perks for tactical advantage.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">😈</div>
+                    <h3>Revenge Mechanic</h3>
+                    <p>Get hit? Strike back with bonus multipliers and settle the score.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🏆</div>
+                    <h3>44 Achievements</h3>
+                    <p>Unlock exclusive characters and rewards by completing challenges.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Collect Characters</h3>
+                    <p>40+ adorable food characters with unique personalities and styles.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📅</div>
+                    <h3>Daily Challenges</h3>
+                    <p>Complete 3 fresh challenges every day for bonus rewards.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Competition</h3>
+                    <p>Compete with players worldwide on the live leaderboard.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Uncomment and add screenshots when ready
+        <section>
+            <h2>Screenshots</h2>
+            <div class="screenshot-placeholder">
+                Screenshots coming soon
+            </div>
+        </section>
+        -->
+
+        <section style="text-align: center;">
+            <h2>Ready to Play?</h2>
+            <p style="color: #a8b2d1; margin-bottom: 30px; font-size: 1.1rem;">
+                Snack Attack is coming soon to the App Store.
+            </p>
+            <!-- Change this when ready to launch -->
+            <span class="coming-soon">Launch Early 2026</span>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ by a solo developer</p>
+            <p style="margin-top: 10px;">
+                <a href="mailto:support@example.com">Contact</a> • 
+                <a href="privacy.html">Privacy Policy</a> • 
+                <a href="terms.html">Terms of Service</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
