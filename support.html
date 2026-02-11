@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Snack Attack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: #a8b2d1;
+            font-size: 1.1rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #a8b2d1;
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            color: #f093fb;
+        }
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .contact-card h2 {
+            color: #f093fb;
+            margin-bottom: 15px;
+        }
+        
+        .email-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            margin-top: 10px;
+        }
+        
+        .email-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .faq {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .faq h2 {
+            color: #f093fb;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .faq-question {
+            color: #f5576c;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer {
+            color: #e6e6e6;
+            padding-left: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #a8b2d1;
+        }
+        
+        footer a {
+            color: #f093fb;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-card, .faq {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <header>
+            <h1>Support</h1>
+            <p class="subtitle">Need help? We're here for you.</p>
+        </header>
+
+        <div class="contact-card">
+            <h2>📧 Contact Us</h2>
+            <p style="color: #a8b2d1; margin-bottom: 20px;">
+                For support, bug reports, or feedback, email us:
+            </p>
+            <a href="mailto:support@example.com" class="email-button">support@example.com</a>
+            <p style="color: #a8b2d1; margin-top: 20px; font-size: 0.9rem;">
+                We typically respond within 24-48 hours.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I play?</div>
+                <div class="faq-answer">
+                    Select a target player, choose your food weapon, pick how many to throw, and launch! Hit your target to earn points and climb the leaderboard. Miss and you lose your food with no points gained.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I earn points?</div>
+                <div class="faq-answer">
+                    You earn points by successfully hitting other players with food. Hitting top players gives you bonus multipliers. Revenge throws also earn extra points!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What happens when I get hit?</div>
+                <div class="faq-answer">
+                    When another player hits you, you lose points based on the damage dealt. You'll get a notification and can tap "Revenge" to strike back with bonus multipliers!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I unlock new characters?</div>
+                <div class="faq-answer">
+                    Characters can be unlocked in three ways: (1) Free starter characters, (2) Purchase with in-game points in the Character Shop, (3) Complete achievements, or (4) Purchase premium packs.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What are Perks?</div>
+                <div class="faq-answer">
+                    Perks are power-ups you can buy with points to give you advantages. They include accuracy boosts, damage multipliers, shields, and more. Use them strategically!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What happens if I run out of points?</div>
+                <div class="faq-answer">
+                    You can always get free peas to keep playing. Complete daily challenges to earn bonus points, or purchase food with higher accuracy to reduce risk.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do Daily Challenges work?</div>
+                <div class="faq-answer">
+                    Three new challenges appear every day. Complete them to earn bonus points. Finish all three to unlock extra rewards!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What's the difference between food types?</div>
+                <div class="faq-answer">
+                    Each food has different stats: accuracy (% chance to hit), damage (points dealt), and cost (points spent). Higher accuracy foods are safer but do less damage. Higher damage foods are riskier but earn more points.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I get to #1 on the leaderboard?</div>
+                <div class="faq-answer">
+                    Earn more points than everyone else! Hit top players for bonus multipliers, complete daily challenges, use revenge throws strategically, and manage your point economy wisely. Reaching #1 unlocks the exclusive prestige character!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Are in-app purchases required?</div>
+                <div class="faq-answer">
+                    No! The entire game is free to play. In-app purchases only unlock exclusive cosmetic characters and badges—they don't give you any gameplay advantages.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I restore my purchases?</div>
+                <div class="faq-answer">
+                    Purchases are tied to your Apple ID and will automatically restore when you log in. If you're having issues, make sure you're using the same Apple ID you made the purchase with.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I delete my account?</div>
+                <div class="faq-answer">
+                    To delete your account and all associated data, email us at <a href="mailto:support@example.com" style="color: #f093fb;">support@example.com</a> with your username. We'll delete everything within 30 days.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">I found a bug. How do I report it?</div>
+                <div class="faq-answer">
+                    Please email us at <a href="mailto:support@example.com" style="color: #f093fb;">support@example.com</a> with:
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li>Description of the bug</li>
+                        <li>What you were doing when it happened</li>
+                        <li>Your device model and iOS version</li>
+                        <li>Screenshots if possible</li>
+                    </ul>
+                    We appreciate your help making the game better!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I suggest new features?</div>
+                <div class="faq-answer">
+                    Absolutely! We love hearing from players. Send your ideas to <a href="mailto:support@example.com" style="color: #f093fb;">support@example.com</a> and we'll consider them for future updates.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is my data safe?</div>
+                <div class="faq-answer">
+                    Yes. We use industry-standard encryption and secure servers. We don't sell your data. Read our full <a href="privacy.html" style="color: #f093fb;">Privacy Policy</a> for details.
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-card" style="margin-top: 40px;">
+            <h2>Still Need Help?</h2>
+            <p style="color: #a8b2d1; margin-bottom: 20px;">
+                Can't find what you're looking for? Get in touch!
+            </p>
+            <a href="mailto:support@example.com" class="email-button">Email Support</a>
+        </div>
+
+        <footer>
+            <p><a href="index.html">Home</a> • <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms of Service</a></p>
+            <p style="margin-top: 10px;">© 2025 Snack Attack. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
